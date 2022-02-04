@@ -50,7 +50,7 @@ function bindObserver() {
     const docsEditorContainer = querySelector(selectors.docsEditorContainer);
 
     if (docsEditorContainer == null) {
-        throw new Error('Unable to observe missing docsEditorContainer');
+        console.error('Unable to observe missing docsEditorContainer');
     }
 
     const observer = new MutationObserver(mutationCallback);
